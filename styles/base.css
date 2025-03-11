@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / 300px 2fr;
+}
+
+header {
+    background: lightpink;
+    grid-column: 1 / 5;
+}
+
+header main footer {
+    max-width: 1280px;
+    margin: auto;
+}
+
+h1 {
+    font-family: roboto;
+    font-weight: Black 900;
+    text-align: center;
+    background-color: lightpink;
+    margin-bottom: 10px;
+    padding: 1rem;
+}
+
+h2 {
+    font-family: roboto;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 13px gray;
+}
+
+p {
+    margin: 0;
+    padding: 10px;
+    font-family: var(--paragraph-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    font-family: montserrat;
+    height: 60vh;  
+    border-radius: 30px; 
+}
+
+.card img {
+    width: 100px;
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.card {
+    display: flex;
+    background-color: lightyellow;
+    flex: 1;
+    height: 65vh;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 1rem;
+}
+
+
+.card2 {
+    display: flex;
+    background-color: lightyellow;
+    text-align: left;
+    flex-direction: column;
+    flex: 1;
+    height: 65vh;
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 1rem;
+}
+
+.resources {
+    align-items: center;
+    padding: 2rem;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+}
+
+.countryimage {
+    width: 350px;
+}
+
+nav {
+    display: flex;
+    background: lightgray;
+    text-decoration: none;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: flex;
+    padding: 20px;
+    font-family: montserrat;
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #fcf7de;
+    color: #484029;
+}
+
+footer {
+    display: flex;
+    background-color: lightgrey;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
