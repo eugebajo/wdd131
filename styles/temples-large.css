@@ -1,4 +1,3 @@
-/* temples-large.css - Vista para pantallas grandes */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Fuente de Google */
 
 * {
@@ -80,5 +79,5 @@ main figure img:hover {
 }
 
 figcaption {
-    font-size: 1
+    font-size: 1rem;
 }
