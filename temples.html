@@ -6,7 +6,7 @@
     <title>Temples</title>Explore
     <meta name="description" content="WDD 131. Dynamic Web Fundamentals. Maria Eugenia Baez temple album">
     <meta name="author" content="Maria Eugenia Baez">
-    <link rel="stylesheet" href="styles/temple.css">
+    <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script defer src="temples.js"></script>
 </head>
@@ -14,7 +14,9 @@
     <!-- Header Section -->
     <header>
         <h1>Temple Album</h1>
-        <nav>
+        <!-- Hamburger Button for Mobile View -->
+        <button class="hamburger" id="hamburger-btn">&#9776;</button>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Old</a></li>
@@ -86,8 +88,8 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; <span id="currentyear"></span> 🌱 María Eugenia Báez Joubert 🌱 Asunción,Paraguay</p>
-        <p><span id="lastModified"></span></p>
+        <p>&copy; <span id="currentyear"></span> 🌱 María Eugenia Báez Joubert 🌱 Asunción, Paraguay</p>
+        <p>Last modified: <span id="lastModified"></span></p>
     </footer>
 
 </body>

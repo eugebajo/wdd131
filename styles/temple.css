@@ -1,4 +1,4 @@
-/* temples.css - Vista móvil */
+/* temples.css - Mobile View (default) */
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +6,14 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Selección de fuente de Google */
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #1e3a8a; /* Color de fondo del encabezado */
+    background-color: #1e3a8a;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -24,6 +24,7 @@ h1 {
     margin-bottom: 10px;
 }
 
+/* Navigation */
 nav ul {
     display: flex;
     justify-content: center;
@@ -39,45 +40,56 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #ffbb33;
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Show Hamburger on Mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1e3a8a;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+/* Main Content Section */
 main {
-    max-width: 1000px; /* Ancho limitado */
+    max-width: 1000px;
     margin: 20px auto;
     padding: 0 10px;
-}
-
-h1 {
-    font-size: 1.8rem;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-main figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-main figure img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-figcaption {
-    font-size: 1.1rem;
-    margin-top: 10px;
-    text-align: center;
-    color: #333;
 }
 
 /* Footer */
@@ -87,11 +99,4 @@ footer {
     padding: 15px;
     text-align: center;
     font-size: 0.9rem;
-}
-
-/* Responsividad */
-@media (min-width: 768px) {
-    main {
-        padding: 0 15px;
-    }
 }
