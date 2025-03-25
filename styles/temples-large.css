@@ -25,6 +25,19 @@ h1 {
     margin-bottom: 10px;
 }
 
+h2 {
+    font-size: 2rem; 
+    color: #1e3a8a;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #1e3a8a;
+    padding-bottom: 15px;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -80,4 +93,11 @@ main figure img:hover {
 
 figcaption {
     font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 2.5rem; /* Aumentar aún más el tamaño en pantallas muy grandes */
+        letter-spacing: 3px; /* Aumentar el espaciado de letras para un look más abierto */
+    }
 }
