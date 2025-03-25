@@ -54,18 +54,18 @@ main {
     padding: 0 30px;
 }
 
-h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 30px;
+/* Diseño en cuadrícula para pantallas grandes */
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para pantallas grandes */
+    gap: 20px;
 }
 
-/* Estilo de las figuras */
 main figure {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas en el diseño de cuadrícula */
-    gap: 20px;
-    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main figure img {
@@ -80,29 +80,5 @@ main figure img:hover {
 }
 
 figcaption {
-    font-size: 1.1rem;
-    margin-top: 10px;
-    text-align: center;
-    color: #333;
-}
-
-/* Media Query para pantallas más grandes */
-@media (min-width: 1200px) {
-    main {
-        padding: 0 50px;
-    }
-
-    /* En pantallas muy grandes, aumenta la cantidad de columnas a 4 */
-    main figure {
-        grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas extra grandes */
-    }
-}
-
-/* Footer */
-footer {
-    background-color: #1e3a8a;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-size: 1rem;
+    font-size: 1
 }
