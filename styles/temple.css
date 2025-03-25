@@ -1,4 +1,3 @@
-/* temples.css - Mobile View (default) */
 * {
     margin: 0;
     padding: 0;
@@ -74,6 +73,7 @@ nav ul li a:hover {
         background-color: #1e3a8a;
         width: 100%;
         text-align: center;
+        padding: 0; /* Reset padding to ensure it fits properly */
     }
 
     nav ul li {
