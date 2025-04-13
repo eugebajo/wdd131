@@ -57,4 +57,7 @@
   footer p {
     margin: 0.2rem;
   }
-  
+
+  .icon-desktop {
+    display: none;
+  }

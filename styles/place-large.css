@@ -35,7 +35,6 @@
     display: block;
   }
   
-  /* Layout flotante sobre la imagen */
   .data, .weather {
     position: absolute;
     background-color: var(--box-bg);
@@ -63,14 +62,13 @@
     display: inline-block;
   }
   
-  /* Icono de clima como pseudoelemento */
   .weather h2::after {
     content: '⛅';
     margin-left: 0.5rem;
   }
   
   .weather-icon-mobile {
-    display: none; /* Se oculta en escritorio */
+    display: none; 
   }
   
   footer {
