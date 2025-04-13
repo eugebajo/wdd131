@@ -1,68 +1,83 @@
 :root {
-    --bg-color: #f7f7f7;
-    --primary-color: #0055a4;
-    --accent-color: #ef4135;
-    --text-color: #222;
-    --font-family: 'Roboto', sans-serif;
+    --main-bg: #c8102e;
+    --accent: #007a33;
+    --text: #fff;
+    --box-bg: rgba(255, 255, 255, 0.8);
+    --font: 'Roboto', sans-serif;
   }
   
   body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: var(--font-family);
+    font-family: var(--font);
     margin: 0;
+    background-color: var(--main-bg);
+    color: #000;
   }
   
-  header {
-    background-color: var(--primary-color);
-    color: white;
+  header, footer {
+    background-color: var(--main-bg);
+    color: var(--text);
     text-align: center;
-    padding: 2rem 0;
+    padding: 1rem;
   }
   
   h1 {
-    font-size: 3rem;
     margin: 0;
+    font-size: 2.5rem;
   }
   
   main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 2rem;
+    position: relative;
   }
   
   picture img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    grid-column: 1 / 3;
+    display: block;
   }
   
+  /* Layout flotante sobre la imagen */
   .data, .weather {
-    background-color: white;
-    padding: 1.5rem;
+    position: absolute;
+    background-color: var(--box-bg);
+    padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 260px;
   }
   
+  .data {
+    top: 40px;
+    left: 40px;
+  }
+  
+  .weather {
+    top: 40px;
+    right: 40px;
+  }
+  
+  .data h2,
+  .weather h2 {
+    background-color: var(--accent);
+    color: white;
+    padding: 0.5rem;
+    margin-top: 0;
+    display: inline-block;
+  }
+  
+  /* Icono de clima como pseudoelemento */
   .weather h2::after {
-    content: " ⛅";
-    font-size: 1.5rem;
+    content: '⛅';
     margin-left: 0.5rem;
   }
   
   .weather-icon-mobile {
-    display: none; /* ocultar en escritorio */
+    display: none; /* Se oculta en escritorio */
   }
   
   footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-    font-size: 1rem;
+    padding: 1rem;
+  }
+  
+  footer p {
+    margin: 0.3rem;
   }
   
