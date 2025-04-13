@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WDD 131. Dynamic Web Fundamentals. Maria Eugenia Baez country page">
+  <meta name="author" content="Maria Eugenia Baez">
+  <title>France</title>
+
+  <link rel="stylesheet" href="place.css" media="screen and (max-width: 767px)" />
+  <link rel="stylesheet" href="place-large.css" media="screen and (min-width: 768px)" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1>France</h1>
+  </header>
+
+  <main>
+    <!-- Imagen principal adaptable -->
+    <picture>
+      <source srcset="images/francia-desktop.webp" media="(min-width: 768px)" />
+      <source srcset="images/francia-mobile.webp" media="(max-width: 767px)" />
+      <img src="images/francia-mobile.webp" alt="Paisaje icónico de Francia" />
+    </picture>
+
+    <!-- Datos del país -->
+    <section class="data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Capital:</strong> París</li>
+        <li><strong>Language:</strong> French</li>
+        <li><strong>Population:</strong> 67 million</li>
+        <li><strong>Currency:</strong> Euro (€)</li>
+        <li><strong>Area:</strong> 643,801 km²</li>
+      </ul>
+    </section>
+
+    <!-- Sección del clima -->
+    <section class="weather">
+      <h2>Weather</h2>
+      <img class="weather-icon-mobile" src="images/cloudy.svg" alt="Clima nublado" />
+      <ul>
+        <li><strong>Temperature:</strong> <span id="temp">8</span>°C</li>
+        <li><strong>Condition:</strong> Cloudy</li>
+        <li><strong>Humidity:</strong> 72%</li>
+        <li><strong>Wind:</strong> <span id="wind">10</span> km/h</li>
+        <li><strong>Thermal sensation:</strong> <span id="windchill">...</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> - Maria Eugenia Baez - Francia</p>
+    <p>Last Modification: <span id="modDate"></span></p>
+  </footer>
+
+  <script src="scripts/place.js" defer></script>
+</body>
+</html>

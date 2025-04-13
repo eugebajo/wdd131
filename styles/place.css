@@ -1,0 +1,63 @@
+:root {
+    --bg-color: #f7f7f7;
+    --primary-color: #0055a4;
+    --accent-color: #ef4135;
+    --text-color: #333;
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .data,
+  .weather {
+    margin-bottom: 1.5rem;
+  }
+  
+  .weather-icon-mobile {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
