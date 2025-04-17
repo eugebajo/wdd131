@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333; 
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 15px;
+    font-weight: 600; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 10px; 
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffbb33;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Show Hamburger on Mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1e3a8a;
+        width: 100%;
+        text-align: center;
+        padding: 0; /* Reset padding to ensure it fits properly */
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: #1e3a8a;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+}
+
+/* Main Content Section */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
