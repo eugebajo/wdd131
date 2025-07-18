@@ -1,65 +1,18 @@
-/* siteplan-large.css - Vista escritorio */
-body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    padding: 40px;
-    line-height: 1.8;
-    max-width: 1000px;
-    margin: auto;
-  }
-  
-  h1, h2 {
-    font-family: 'Poppins', sans-serif;
-    color: #2b4c60;
-  }
-  
-  header {
-    background-color: #A6DCEF;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-  }
-  
-  .subtitle {
-    font-size: 1.4em;
-    color: #2b4c60;
-  }
-  
-  section {
-    margin-top: 40px;
-    padding: 25px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    background-color: #f9f9f9;
-  }
-  
-  ul {
-    padding-left: 25px;
-  }
-  
-  .color-sample {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .primary {
-    background-color: #A6DCEF;
-  }
-  
-  .accent {
-    background-color: #F7A072;
-  }
-  
-  img {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 15px;
-    max-width: 100%;
-    height: auto;
-  }
+main {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  max-width: 600px;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+}
