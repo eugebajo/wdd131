@@ -1,65 +1,84 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Product Review Form Page">
-  <meta name="author" content="Maria Eugenia Baez">
-  <title>Product Review Form</title>
-
-  <link rel="stylesheet" href="styles/form.css" media="screen and (max-width: 767px)">
-  <link rel="stylesheet" href="styles/form-large.css" media="screen and (min-width: 768px)">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-  <script src="scripts/form.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Zana | Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css" media="screen and (min-width: 768px)">
+    <script defer src="scripts/form.js"></script>
 </head>
 <body>
-  <header>
-    <img src="images/make-abrazos-logo.png" alt="Logo" class="logo">
-    <h1>Product Review</h1>
-  </header>
+    <header>
+        <h1>Team Zana Product Review</h1>
+    </header>
 
-  <main>
-    <form method="get" action="review.html">
-      <label for="productName">Product Name:</label>
-      <select id="productName" name="productName" required>
-        <option value="" disabled selected>Select a Product ...</option>
-      </select>
+    <main>
+        <form action="review.html" method="get" id="reviewForm">
+            <fieldset>
+                <legend>Leave Your Review</legend>
 
-      <fieldset>
-        <legend>Overall Rating:</legend>
-        <div class="stars">
-          <label><input type="radio" name="rating" value="1" required> ☆</label>
-          <label><input type="radio" name="rating" value="2"> ☆☆</label>
-          <label><input type="radio" name="rating" value="3"> ☆☆☆</label>
-          <label><input type="radio" name="rating" value="4"> ☆☆☆☆</label>
-          <label><input type="radio" name="rating" value="5"> ☆☆☆☆☆</label>
-        </div>
-      </fieldset>
+                <!-- Product Name -->
+                <label for="productName">Product Name:</label>
+                <select id="productName" name="productName" required>
+                    <option value="" disabled selected>Select a product...</option>
+                </select>
 
-      <label for="installDate">Date of Installation:</label>
-      <input type="date" id="installDate" name="installDate" required>
+                <!-- Overall Rating -->
+                <label>Overall Rating:</label>
+                <div class="rating">
+                    <input type="radio" id="rate1" name="rating" value="1" required>
+                    <label for="rate1">★</label>
 
-      <fieldset>
-        <legend>Useful Features:</legend>
-        <label><input type="checkbox" id="feature1" name="features" value="Feature A"> Feature A</label>
-        <label><input type="checkbox" id="feature2" name="features" value="Feature B"> Feature B</label>
-        <label><input type="checkbox" id="feature3" name="features" value="Feature C"> Feature C</label>
-      </fieldset>
+                    <input type="radio" id="rate2" name="rating" value="2">
+                    <label for="rate2">★★</label>
 
-      <label for="review">Written Review:</label>
-      <textarea id="review" name="review" rows="4" placeholder="Write your review..."></textarea>
+                    <input type="radio" id="rate3" name="rating" value="3">
+                    <label for="rate3">★★★</label>
 
-      <label for="username">Your Name (optional):</label>
-      <input type="text" id="username" name="username" placeholder="John Doe">
+                    <input type="radio" id="rate4" name="rating" value="4">
+                    <label for="rate4">★★★★</label>
 
-      <input type="submit" value="Submit Review">
-    </form>
-  </main>
+                    <input type="radio" id="rate5" name="rating" value="5">
+                    <label for="rate5">★★★★★</label>
+                </div>
 
-  <footer>
-    <p>&copy; <span id="year"></span> - Maria Eugenia Baez</p>
-    <p>Last Modification: <span id="modDate"></span></p>
-  </footer>
+                <!-- Date of Enrollment -->
+                <label for="installDate">Date of Enrollment:</label>
+                <input type="date" id="installDate" name="installDate" required>
+
+                <!-- Useful Features -->
+                <fieldset>
+                    <legend>Useful Features (check all that apply):</legend>
+                    <input type="checkbox" id="feature1" name="features" value="Nutrition Plan">
+                    <label for="feature1">Nutrition Plan</label><br>
+
+                    <input type="checkbox" id="feature2" name="features" value="Workout Videos">
+                    <label for="feature2">Workout Videos</label><br>
+
+                    <input type="checkbox" id="feature3" name="features" value="Personal Coaching">
+                    <label for="feature3">Personal Coaching</label><br>
+
+                    <input type="checkbox" id="feature4" name="features" value="Progress Tracking">
+                    <label for="feature4">Progress Tracking</label>
+                </fieldset>
+
+                <!-- Written Review -->
+                <label for="reviewText">Written Review:</label>
+                <textarea id="reviewText" name="reviewText" placeholder="Write your review here..."></textarea>
+
+                <!-- User Name -->
+                <label for="userName">Your Name (optional):</label>
+                <input type="text" id="userName" name="userName">
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Review">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Maria Eugenia Baez. All rights reserved.</p>
+    </footer>
 </body>
 </html>

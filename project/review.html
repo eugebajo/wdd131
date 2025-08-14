@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Review Confirmation</title>
-  <link rel="stylesheet" href="styles/form.css" media="screen and (max-width: 767px)">
-  <link rel="stylesheet" href="styles/form-large.css" media="screen and (min-width: 768px)">
-  <script src="scripts/review.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            let counter = localStorage.getItem('reviewCount') || 0;
+            counter++;
+            localStorage.setItem('reviewCount', counter);
+            document.getElementById('count').textContent = counter;
+        });
+    </script>
 </head>
 <body>
-  <header>
-    <h1>Thank You!</h1>
-  </header>
-  <main>
-    <p>Your review has been submitted successfully.</p>
-    <p>Total reviews submitted: <strong id="counter">0</strong></p>
-  </main>
-  <footer>
-    <p>&copy; <span id="year"></span> - Maria Eugenia Baez</p>
-    <p>Last Modification: <span id="modDate"></span></p>
-  </footer>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+        <p>Your review has been successfully submitted.</p>
+        <p>You have submitted <span id="count"></span> review(s).</p>
+        <a href="form.html">Submit another review</a>
+    </main>
+    <footer>
+        <p>&copy; 2025 Team Zana Fitness. All rights reserved.</p>
+    </footer>
 </body>
 </html>

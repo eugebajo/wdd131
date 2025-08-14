@@ -1,19 +1,18 @@
 const products = [
-  { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
-  { id: "fc-2050", name: "power laces", averagerating: 4.7 },
-  { id: "fs-1987", name: "time circuits", averagerating: 3.5 },
-  { id: "ac-2000", name: "low voltage reactor", averagerating: 3.9 },
-  { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
+    { id: 1, name: "Personal Training Plan" },
+    { id: 2, name: "Weight Loss Program" },
+    { id: 3, name: "Muscle Gain Program" },
+    { id: 4, name: "HIIT Sessions" },
+    { id: 5, name: "Online Coaching" }
 ];
 
-const select = document.getElementById("productName");
-products.forEach(product => {
-  const option = document.createElement("option");
-  option.value = product.id;
-  option.textContent = product.name;
-  select.appendChild(option);
-});
+document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById('productName');
 
-// Footer year and last modified
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("modDate").textContent = document.lastModified;
+    products.forEach(product => {
+        const option = document.createElement('option');
+        option.value = product.name;
+        option.textContent = product.name;
+        select.appendChild(option);
+    });
+});
